@@ -1,11 +1,11 @@
-export class GerenciadorVeiculos<T>{
-    private veiculos: T[];
+import { Veiculo } from "../interface/Veiculo";
 
-    constructor() {
-        this.veiculos = [];
-    }
+export class GerenciadorVeiculos<T extends Veiculo> {
+    private veiculos: T[] = [];
 
-    adicionar(veiculo: T): void{
+    constructor() {}
+
+    adicionar(veiculo: T): void {
         this.veiculos.push(veiculo);
     }
 
@@ -20,6 +20,6 @@ export class GerenciadorVeiculos<T>{
     }
 
     listarVeiculos(): void {
-        console.log("Lista de veículos: ", this.veiculos)
+        console.log("Lista de veículos: ", this.veiculos);
     }
 }
