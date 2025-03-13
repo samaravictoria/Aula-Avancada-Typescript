@@ -10,4 +10,9 @@ export class FiltroVeiculos{
         return veiculos.filter(
             v => v.marca.toLowerCase() === marca.toLocaleLowerCase());
     }
+
+    static filtrarPorModelo(veiculos: Veiculo[], modelo: string): Veiculo[]{
+        return veiculos.filter(
+            v => v.modelo.toLowerCase() === modelo.toLocaleLowerCase());
+    }
 }
