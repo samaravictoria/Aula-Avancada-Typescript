@@ -2,9 +2,9 @@ import { Carro } from "./interface/Carro"
 import { Moto } from "./interface/Moto"
 
 const meuCarro: Carro = {
-    marca: "Toyota",
-    modelo: "Corolla",
-    ano: 2022,
+    marca: "Nissan",
+    modelo: "Kicks",
+    ano: 2018,
     portas: 4,
 
     acelerar: () => "O carro está acelerando!"
